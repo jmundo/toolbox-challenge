@@ -1,0 +1,6 @@
+#game-board img {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    box-sizing: border-box;
+}
