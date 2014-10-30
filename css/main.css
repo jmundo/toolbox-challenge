@@ -1,6 +1,18 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #game-board img {
     width: 150px;
     height: 150px;
     padding: 5px;
     box-sizing: border-box;
+    border-radius: 15px;
+}
+
+#game-board img:hover {
+    border: 2px solid #7379ff;
 }
