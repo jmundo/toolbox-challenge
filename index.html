@@ -7,31 +7,72 @@
         <link rel ="stylesheet" href="css/main.css">
     </head>
     <body>
-        <h1>Memory!</h1>
-        <p><button type="button" class="btn btn-primary" id="start-game">Start New Game</button></p>
+        <main class="container-non-responsive">
+            <header>
+                <div class="text-center">
+                <section class="row first row">
+                    <div class="col-md-12">
+                        <p>Memory</p>
+                    </div>
+                </section>
+                </div>
+            </header>
 
-        <section class='row first row'>
-            <div class="col-md-3">
-                <p>Elapsed time: <span id ="elapsed-seconds"></span></p>
+            <section class="row second row">
+                <div class="text-center">
+                    <div class="col-md-12">
+                        <button type="button" class="btn-lg btn-primary" id="start-game">Start New Game</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row third row">
+                <div class="text-center">
+                    <div class="col-md-3">
+                        <p>Time: <span id ="elapsed-seconds"></span></p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <p>Matches: <span id ="matches"></span></p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <p>Remaining: <span id ="remaining"></span></p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <p>Missed: <span id ="missed"></span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class='row fourth row'>
+                <div class="text-center">
+                    <div id="game-board"></div>
+                </div>
+            </section>
+
+            <div class="text-center">
+                <div class="overlay"></div>
+                <div class="overlay-message">
+                    <p>You Won!!!</p>
+                    <button type="button" class="btn-lg btn-primary" id="restart-game">Restart Game</button>
+                    <button type="button" class="btn-lg btn-primary" id="all-done">All Done</button>
+                </div>
             </div>
 
-            <div class="col-md-3">
-                <p>Matches: <span id ="matches"></span></p>
+            <div class="overlay-one"></div>
+            <div class="overlay-message-one">
+                <p>How To Play:</p>
+                <div id="intro">
+                    <p>To play, simply match each tile to its matching tile. Clicking on a tile will reveal a tile image. Clicking again will reveal another tile image. If these tiles match, they will stay face up. Otherwise, they will turn over. The game is won when all tiles are face up.</p>
+                </div>
+                <p><u>Click anywhere to continue!</u></p>
             </div>
 
-            <div class="col-md-3">
-                <p>Remaining: <span id ="remaining"></span></p>
-            </div>
-
-            <div class="col-md-3">
-                <p>Missed: <span id ="missed"></span></p>
-            </div>
-        </section>
-
-        <div id="game-board" class="text-center"></div>
-
-        <script src="js/jquery-2.1.1.js"></script>
-        <script src="js/lodash.js"></script>
-        <script src="js/app.js"></script>
+            <script src="js/jquery-2.1.1.js"></script>
+            <script src="js/lodash.js"></script>
+            <script src="js/app.js"></script>
+        </main>
     </body>
 </html>
